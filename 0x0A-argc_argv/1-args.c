@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
- * main- prints the number of it's arguments
- * @argc : no of argument
- * @argv : no of arguments
- * Return: 0
+ * main- prints it's own name
+ * @argc : num of arguments
+ * @argv : arr of arguments
+ * Return: always 0
  */
-int main(int argc, __attribute__((unused))char *argv[])
+int main(__attribute__((unused))int argc, char *argv[])
 {
-	printf("%d\n", argc - 1);
+	printf("%s\n", argv[0]);
 	return (0);
 }
